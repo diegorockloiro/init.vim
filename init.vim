@@ -22,15 +22,20 @@ Plug 'https://github.com/preservim/tagbar' " Tagbar for code navigation
 
 call plug#end()
 
+
+nmap <F8> :TagbarToggle<CR>
+
 :colorscheme deus
 
 nnoremap <C-f> :NERDTreeFocus<CR> "Ctrl + f modo focus
 nnoremap <C-n> :NERDTree<CR>		"Ctrl + n abre a nerd tree
 nnoremap <C-t> :NERDTreeToggle<CR>	"Ctrl + t toggle 
-
 let g:NERDTreeDirArrowExpandable="+"
 let g:NERDTreeDirArrowCollapsible="~"
 
 
---Notas-- 
+"--Notas-- 
 "Tag bar precisa de exuberant-ctags para funcionar
+"Para o coc funcionar, NA PASTA coc.nvim, dentro da pasta Plugged, $sudo npm install -g yarn
+"Depois $yarn install e depois $yarn build
+"Instalar nodejs e npm
