@@ -35,7 +35,8 @@ let g:NERDTreeDirArrowCollapsible="~"
 
 
 "--Notas-- 
-"Tag bar precisa de exuberant-ctags para funcionar
+"Para o Tag bar funcionar, instale exuberant-ctags.
+"Instalar nodejs e npm.
 "Para o coc funcionar, NA PASTA coc.nvim, dentro da pasta Plugged, $sudo npm install -g yarn
 "Depois $yarn install e depois $yarn build
-"Instalar nodejs e npm
+
