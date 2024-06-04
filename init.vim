@@ -7,6 +7,8 @@
 :set softtabstop=4
 :set mouse=a
 
+inoremap <silent><expr> <CR> coc#pum#visible() ? coc#pum#confirm() : "\<CR>" 
+
 call plug#begin('~/.config/nvim/plugged')
 " plug plugins here
 
@@ -35,6 +37,8 @@ let g:NERDTreeDirArrowCollapsible="~"
 
 
 "--Notas-- 
+"Criar a pasta nvim e depois criar o init.vim.
+"Para instalar o vim-plug, pegar o curl do github.
 "Para o Tag bar funcionar, instale exuberant-ctags.
 "Instalar nodejs e npm.
 "Para o coc funcionar, NA PASTA coc.nvim, dentro da pasta Plugged, $sudo npm install -g yarn
